@@ -81,20 +81,6 @@ Frontend runs on: `http://localhost:5173`
 
 ---
 
-## 🔐 Default Login
-
-After running the schema, a default manager account is created:
-
-| Field | Value |
-|-------|-------|
-| Email | `manager@billsystem.com` |
-| Password | `password` |
-| Role | MANAGER |
-
-> ⚠️ Change this password immediately after first login!
-
----
-
 ## 📧 Email Setup (Gmail)
 
 1. Go to [Google Account Settings](https://myaccount.google.com/)

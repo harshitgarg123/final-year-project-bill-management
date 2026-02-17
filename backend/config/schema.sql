@@ -87,19 +87,3 @@ CREATE INDEX idx_users_email ON users(email);
 CREATE INDEX idx_password_resets_token ON password_resets(token);
 CREATE INDEX idx_password_resets_user ON password_resets(user_id);
 CREATE INDEX idx_user_details_user ON user_details(user_id);
-
--- ============================================
--- Default Manager Account
--- Password: manager123 (bcrypt hashed)
--- ============================================
-INSERT INTO users (name, email, password, role, status)
-VALUES (
-  'System Manager',
-  'manager@billsystem.com',
-  '$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi',
-  'MANAGER',
-  'ACTIVE'
-) ON DUPLICATE KEY UPDATE name = name;
-
--- Note: Default manager password is 'password' - change it after first login!
--- The bcrypt hash above is for the password 'password'

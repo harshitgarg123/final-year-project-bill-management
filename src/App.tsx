@@ -4,7 +4,6 @@ import 'react-toastify/dist/ReactToastify.css';
 import { AuthProvider } from './context/AuthContext';
 import { ProtectedRoute } from './components/ProtectedRoute';
 import { Layout } from './components/Layout';
-import { Login } from './pages/Login';
 import { ForgotPassword } from './pages/ForgotPassword';
 import { ResetPassword } from './pages/ResetPassword';
 import { Dashboard } from './pages/Dashboard';
@@ -16,6 +15,7 @@ import { MyBills } from './pages/client/MyBills';
 import { AdminBills } from './pages/admin/AdminBills';
 import { ManageUsers } from './pages/manager/ManageUsers';
 import { AllBills } from './pages/manager/AllBills';
+import { Login } from './pages/Login';
 
 export function App() {
   return (
