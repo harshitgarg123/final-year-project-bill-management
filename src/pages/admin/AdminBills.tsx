@@ -92,7 +92,7 @@ export const AdminBills: React.FC = () => {
     switch (type) {
       case 'LIGHT': return '💡';
       case 'BIN': return '🗑️';
-      case 'VOTER': return '🗳️';
+      case 'WATER': return '🗳️';
       case 'NEWSPAPER': return '📰';
       default: return '📄';
     }

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import api from '../../services/api';
-import { Upload, Calendar, DollarSign, FileText, Users, Loader2 } from 'lucide-react';
+import { Upload, Calendar, FileText, Users, Loader2, IndianRupee, DollarSign } from 'lucide-react';
 
 interface Admin {
   id: number;
@@ -80,7 +80,7 @@ export const UploadBill: React.FC = () => {
   const billTypes = [
     { value: 'LIGHT', label: '💡 Light Bill' },
     { value: 'BIN', label: '🗑️ Bin Bill' },
-    { value: 'VOTER', label: '🗳️ Voter Bill' },
+    { value: 'WATER', label: '🦠 Water Bill' },
     { value: 'NEWSPAPER', label: '📰 Newspaper Bill' },
   ];
 

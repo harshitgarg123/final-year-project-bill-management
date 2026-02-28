@@ -14,7 +14,7 @@ const billController = {
         return res.status(400).json({ message: 'All fields are required: bill_type, bill_date, amount, admin_id' });
       }
 
-      if (!['LIGHT', 'BIN', 'VOTER', 'NEWSPAPER'].includes(bill_type)) {
+      if (!['LIGHT', 'BIN', 'WATER', 'NEWSPAPER'].includes(bill_type)) {
         return res.status(400).json({ message: 'Invalid bill type' });
       }
 

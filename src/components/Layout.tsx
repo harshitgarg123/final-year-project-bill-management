@@ -77,9 +77,9 @@ export const Layout: React.FC = () => {
           {/* Logo */}
           <div className="flex items-center justify-between px-6 py-5 border-b border-indigo-700/50">
             <div className="flex items-center space-x-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/10 backdrop-blur">
+              {/* <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/10 backdrop-blur">
                 <Receipt className="h-6 w-6 text-indigo-200" />
-              </div>
+              </div> */}
               <div>
                 <h1 className="text-lg font-bold tracking-tight">BillManager</h1>
                 <p className="text-xs text-indigo-300">Management System</p>

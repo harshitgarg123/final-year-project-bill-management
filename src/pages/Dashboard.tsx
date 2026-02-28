@@ -141,7 +141,7 @@ export const Dashboard: React.FC = () => {
             </div>
             <div>
               <p className="text-sm font-medium text-gray-900">Bill Types</p>
-              <p className="text-xs text-gray-500">Light, Bin, Voter, Newspaper</p>
+              <p className="text-xs text-gray-500">Light, Bin, WATER, Newspaper</p>
             </div>
           </div>
           <div className="flex items-center space-x-3 p-4 bg-gray-50 rounded-xl">

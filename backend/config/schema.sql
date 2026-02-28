@@ -28,7 +28,7 @@ CREATE TABLE IF NOT EXISTS bills (
   id INT AUTO_INCREMENT PRIMARY KEY,
   client_id INT NOT NULL,
   admin_id INT NOT NULL,
-  bill_type ENUM('LIGHT', 'BIN', 'VOTER', 'NEWSPAPER') NOT NULL,
+  bill_type ENUM('LIGHT', 'BIN', 'WATER', 'NEWSPAPER') NOT NULL,
   bill_date DATE NOT NULL,
   amount DECIMAL(10, 2) NOT NULL,
   bill_file VARCHAR(255) NOT NULL,

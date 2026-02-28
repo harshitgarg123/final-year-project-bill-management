@@ -61,7 +61,7 @@ export const MyBills: React.FC = () => {
     switch (type) {
       case 'LIGHT': return '💡';
       case 'BIN': return '🗑️';
-      case 'VOTER': return '🗳️';
+      case 'WATER': return '🗳️';
       case 'NEWSPAPER': return '📰';
       default: return '📄';
     }
@@ -107,7 +107,7 @@ export const MyBills: React.FC = () => {
                           <span className="text-xl mr-2">{getBillTypeIcon(bill.bill_type)}</span>
                           <div>
                             <div className="text-sm font-medium text-gray-900">{bill.bill_type}</div>
-                            <div className="text-xs text-gray-500">#{bill.id}</div>
+                            {/* <div className="text-xs text-gray-500">#{bill.id}</div> */}
                           </div>
                         </div>
                       </td>
@@ -167,7 +167,7 @@ export const MyBills: React.FC = () => {
               </div>
               <div className="flex justify-between py-2 border-b">
                 <span className="text-gray-500">Amount</span>
-                <span className="font-semibold text-gray-900">${Number(viewBill.amount).toFixed(2)}</span>
+                <span className="font-semibold text-gray-900">Rs{Number(viewBill.amount).toFixed(2)}</span>
               </div>
               <div className="flex justify-between py-2 border-b">
                 <span className="text-gray-500">Admin</span>
